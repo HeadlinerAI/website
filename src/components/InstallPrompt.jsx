@@ -29,7 +29,7 @@ export default function InstallPrompt() {
             {' '}
                         ⎋{' '}
           </span>
-                    and then "Add to Home Screen"
+                    and then &qout;Add to Home Screen&qout;
                     <span role="img" aria-label="plus icon">
             {' '}
                         ➕{' '}

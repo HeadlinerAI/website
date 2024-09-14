@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import { SessionProvider } from "next-auth/react"
 import "./globals.css";
 
 
@@ -24,7 +25,9 @@ export default function RootLayout({ children }) {
         <body
             className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-            {children}
+            <SessionProvider session={session}>
+                {children}
+            </SessionProvider>
         </body>
     </html>
   );

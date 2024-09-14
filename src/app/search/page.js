@@ -51,7 +51,7 @@ export default function Home() {
         </div>
         <ul class = "navbar">
             <li><a href = "/account">Account</a></li>
-            <li><a href = "/home">News</a></li>
+            <li><a href = "/app">News</a></li>
             <li><a href = "/bookmarks">Bookmarks</a></li>
             <li><a href = "/search">Search</a></li>
         </ul>

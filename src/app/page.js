@@ -1,6 +1,5 @@
 'use client';
 
-import Image from "next/image";
 import PushNotificationManager from "@/components/PushNotifications";
 import InstallPrompt from "@/components/InstallPrompt";
 import {

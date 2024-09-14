@@ -1,13 +1,25 @@
 'use client';
 
 import Image from "next/image";
+<<<<<<< Updated upstream
 import PushNotificationManager from "@/components/PushNotifications";
 import InstallPrompt from "@/components/InstallPrompt";
+=======
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+>>>>>>> Stashed changes
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+<<<<<<< Updated upstream
         <div>
           <PushNotificationManager/>
           <InstallPrompt/>
@@ -56,6 +68,15 @@ export default function Home() {
             Read our docs
           </a>
         </div>
+=======
+        <h1 class="header">Headliner</h1>
+        <Card className="news-card">
+      		<CardHeader>
+    			<CardTitle className="article-title">Lorem ipsum odor amet, consectetuer adipiscing elit.</CardTitle>
+    			<CardDescription className="article-summary">Lorem ipsum odor amet, consectetuer adipiscing elit. Bibendum bibendum natoque primis id vehicula libero nulla.</CardDescription>
+  			</CardHeader>
+		</Card>
+>>>>>>> Stashed changes
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a

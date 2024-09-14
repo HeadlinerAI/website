@@ -90,3 +90,28 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.header {
+  font-size: 48px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.news-card {
+  margin-left: 10%;
+  margin-right: 10%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.vox-cdn.com/thumbor/SwcC3EUYhS7CvzpU-j6ilklwVsI=/0x0:2040x1360/1200x628/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/24328229/g95schero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.article-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.article-summary {
+  font-size: 16px;
+  color: rgb(194, 194, 194);
+}

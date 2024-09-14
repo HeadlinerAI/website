@@ -37,3 +37,10 @@ next-env.d.ts
 
 certificates
 .env
+
+# sst
+.sst
+
+
+# open-next
+.open-next

@@ -10,6 +10,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import {
+	ThemeProvider
+} from "@/components/theme-provider";
 
 export default function Home() {
   return (

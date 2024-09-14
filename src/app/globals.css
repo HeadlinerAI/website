@@ -91,6 +91,41 @@ body {
   }
 }
 
+.navbar {
+  /*color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.navbar li {
+  float: left;
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #111;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  bottom: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
 .header {
   font-size: 48px;
   margin-left: 50%;

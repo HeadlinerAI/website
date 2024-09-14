@@ -20,7 +20,7 @@ export default function Home() {
           <PushNotificationManager/>
           <InstallPrompt/>
         </div>
-        <h1 class="header">Headliner</h1>
+        <h1 className="header">Headliner</h1>
         <Card className="news-card">
       		<CardHeader>
     			<CardTitle className="article-title">Lorem ipsum odor amet, consectetuer adipiscing elit.</CardTitle>

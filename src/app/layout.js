@@ -1,5 +1,4 @@
 import localFont from "next/font/local";
-import { SessionProvider } from "next-auth/react"
 import "./globals.css";
 import {AuthProvider} from "@/components/AuthProvider";
 

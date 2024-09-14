@@ -55,18 +55,7 @@ export default function Home() {
   					</CardHeader>
 				</Card>
 			</DrawerTrigger>
-  			<DrawerContent>
-    			<DrawerHeader>
-      				<DrawerTitle>Are you absolutely sure?</DrawerTitle>
-      				<DrawerDescription>This action cannot be undone.</DrawerDescription>
-    			</DrawerHeader>
-    			<DrawerFooter>
-      				<Button>Submit</Button>
-      				<DrawerClose>
-        				<Button variant="outline">Cancel</Button>
-      				</DrawerClose>
-    			</DrawerFooter>
-  			</DrawerContent>
+  			<DrawerContent></DrawerContent>
 		</Drawer>
       </main>
 	</ThemeProvider>

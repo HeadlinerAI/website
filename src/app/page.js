@@ -1,7 +1,5 @@
 'use client';
 
-import Image from "next/image";
-import Link from 'next/link'
 import PushNotificationManager from "@/components/PushNotifications";
 import InstallPrompt from "@/components/InstallPrompt";
 import {
@@ -13,21 +11,8 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import {
-	Drawer,
-	DrawerClose,
-	DrawerContent,
-	DrawerDescription,
-	DrawerFooter,
-	DrawerHeader,
-	DrawerTitle,
-	DrawerTrigger,
-} from "@/components/ui/drawer"
-import {
-	Button
-} from "@/components/ui/button"
-import {
 	ThemeProvider
-} from "@/components/theme-provider"
+} from "@/components/theme-provider";
 
 export default function Home() {
   return (
@@ -38,12 +23,6 @@ export default function Home() {
           <PushNotificationManager/>
           <InstallPrompt/>
         </div>
-        <ul class = "navbar">
-          <li><a href = "/account">Account</a></li>
-          <li><a href = "/home">News</a></li>
-          <li><a href = "/bookmarks">Bookmarks</a></li>
-          <li><a href = "/search">Search</a></li>
-        </ul>
         <h1 className="header">Headliner</h1>
         <Card className="news-card">
       		<CardHeader>
@@ -51,20 +30,8 @@ export default function Home() {
     			<CardDescription className="article-summary">Lorem ipsum odor amet, consectetuer adipiscing elit. Bibendum bibendum natoque primis id vehicula libero nulla.</CardDescription>
   			</CardHeader>
 		</Card>
-
-		<Drawer>
-  			<DrawerTrigger>
-				<Card className="news-card">
-      				<CardHeader>
-    					<CardTitle className="article-title">Lorem ipsum odor amet, consectetuer adipiscing elit.</CardTitle>
-    					<CardDescription className="article-summary">Lorem ipsum odor amet, consectetuer adipiscing elit. Bibendum bibendum natoque primis id vehicula libero nulla.</CardDescription>
-  					</CardHeader>
-				</Card>
-			</DrawerTrigger>
-  			<DrawerContent></DrawerContent>
-		</Drawer>
-    </main>
-    </ThemeProvider>
-  </div>
+      </main>
+	  </ThemeProvider>
+    </div>
   );
 }

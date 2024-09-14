@@ -92,9 +92,6 @@ body {
 }
 
 .navbar {
-  /*color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;*/
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -102,7 +99,7 @@ body {
   background-color: #333;
 }
 
-
+/*Navbar*/
 .navbar li {
   float: left;
 }
@@ -112,7 +109,6 @@ body {
   color: white;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
 }
 
 .navbar a:hover {
@@ -124,6 +120,26 @@ body {
   position: fixed; /* Set the navbar to fixed position */
   bottom: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+}
+
+/* Responsive navigation menu (for mobile devices) */
+/*NOTE: maybe later could have curtain menus only for mobile*/
+@media screen and (max-width: 600px) {
+  .navbar {
+    float: none;
+    display: block;
+  }
+
+  .navbar {
+    float: left;
+  }
+  
+  .navbar a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
 }
 
 .header {

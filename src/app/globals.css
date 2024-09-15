@@ -93,6 +93,12 @@ body {
 
 /*Navbar*/
 .navbar {
+  /*centering elements*/
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-content: center;
+
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -127,9 +133,10 @@ body {
 /*NOTE: maybe later could have curtain menus only for mobile*/
 @media screen and (max-width: 600px) {
   .navbar {
-    float: left;
-    display: block;
-    position:fixed;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-content: center;
   }
 
   .navbar a {

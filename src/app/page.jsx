@@ -98,7 +98,7 @@ export default function Home() {
 					</DrawerHeader>
 					<DrawerFooter>
 						<a href="https://example.com" target="_blank" className={buttonVariants({ variant: "outline" })}>Read More</a>
-						<Button>Talk to Benjy</Button>
+						<Button variant="outline" className="benjy">Talk to Benjy</Button>
 						<DrawerClose>
 
 						</DrawerClose>

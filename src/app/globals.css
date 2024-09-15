@@ -268,3 +268,9 @@ main{
   filter: drop-shadow(8px 8px 10px gray);
 }
 
+/*chat with benjy button*/
+.benjy{
+  background-color: #082b67;
+  color: white;
+}
+

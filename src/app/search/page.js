@@ -1,54 +1,118 @@
-import Image from "next/image";
-import Link from 'next/link'
+import {
+  Card,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+import {
+  Command,
+  CommandDialog,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+  CommandSeparator,
+  CommandShortcut,
+} from "@/components/ui/command"
+
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>This is the Search Page</li>
-        </ol>
+        <h1 className="header">Search</h1>
+        <Command>
+          <CommandInput placeholder="Search for articles..." />
+          <CommandList>
+            <CommandEmpty>No results found.</CommandEmpty>
+          </CommandList>
+        </Command>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+        <Drawer>
+				  <DrawerTrigger>
+					  <Card className="news-card">
+						  <CardHeader>
+							  <CardTitle className="article-title">Lorem ipsum odor amet, consectetuer adipiscing elit.</CardTitle>
+							  <CardDescription className="article-summary">Lorem ipsum odor amet, consectetuer adipiscing elit. Bibendum bibendum natoque primis id vehicula libero nulla.</CardDescription>
+						  </CardHeader>
+					  </Card>
+				  </DrawerTrigger>
+				  <DrawerContent className="article-content">
+					  <DrawerHeader>
+						  {/*<img src="https://via.placeholder.com/150" alt="placeholder" className="rounded-full w-20 h-20"/>-->*/}
+						  <img src="https://cdn.vox-cdn.com/thumbor/SwcC3EUYhS7CvzpU-j6ilklwVsI=/0x0:2040x1360/1200x628/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/24328229/g95schero.jpg"></img>
+						  <DrawerTitle className="article-title">Lorem ipsum odor amet, consectetuer adipiscing elit.</DrawerTitle>
+						  <DrawerDescription className="article-summary">Lorem ipsum odor amet, consectetuer adipiscing elit. Bibendum bibendum natoque primis id vehicula libero nulla.<br></br><br></br>Lorem ipsum odor amet, consectetuer adipiscing elit. Sagittis condimentum facilisis sollicitudin odio auctor. Molestie habitant pretium sed semper taciti ullamcorper eget consequat. Nibh taciti ante litora odio ipsum venenatis. Interdum diam adipiscing porttitor volutpat habitant. Semper porta eget maximus justo magna; nisi tincidunt inceptos.</DrawerDescription>
+					  </DrawerHeader>
+					  <DrawerFooter>
+
+						  <DrawerClose>
+
+						  </DrawerClose>
+					  </DrawerFooter>
+				  </DrawerContent>
+			  </Drawer>
+
+         <Drawer>
+				  <DrawerTrigger>
+					  <Card className="news-card">
+						  <CardHeader>
+							  <CardTitle className="article-title">Lorem ipsum odor amet, consectetuer adipiscing elit.</CardTitle>
+							  <CardDescription className="article-summary">Lorem ipsum odor amet, consectetuer adipiscing elit. Bibendum bibendum natoque primis id vehicula libero nulla.</CardDescription>
+						  </CardHeader>
+					  </Card>
+				  </DrawerTrigger>
+				  <DrawerContent className="article-content">
+					  <DrawerHeader>
+						  {/*<img src="https://via.placeholder.com/150" alt="placeholder" className="rounded-full w-20 h-20"/>-->*/}
+						  <img src="https://cdn.vox-cdn.com/thumbor/SwcC3EUYhS7CvzpU-j6ilklwVsI=/0x0:2040x1360/1200x628/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/24328229/g95schero.jpg"></img>
+						  <DrawerTitle className="article-title">Lorem ipsum odor amet, consectetuer adipiscing elit.</DrawerTitle>
+						  <DrawerDescription className="article-summary">Lorem ipsum odor amet, consectetuer adipiscing elit. Bibendum bibendum natoque primis id vehicula libero nulla.<br></br><br></br>Lorem ipsum odor amet, consectetuer adipiscing elit. Sagittis condimentum facilisis sollicitudin odio auctor. Molestie habitant pretium sed semper taciti ullamcorper eget consequat. Nibh taciti ante litora odio ipsum venenatis. Interdum diam adipiscing porttitor volutpat habitant. Semper porta eget maximus justo magna; nisi tincidunt inceptos.</DrawerDescription>
+					  </DrawerHeader>
+					  <DrawerFooter>
+
+						  <DrawerClose>
+
+						  </DrawerClose>
+					  </DrawerFooter>
+				  </DrawerContent>
+			  </Drawer>
+
+         <Drawer>
+				  <DrawerTrigger>
+					  <Card className="news-card">
+						  <CardHeader>
+							  <CardTitle className="article-title">Lorem ipsum odor amet, consectetuer adipiscing elit.</CardTitle>
+							  <CardDescription className="article-summary">Lorem ipsum odor amet, consectetuer adipiscing elit. Bibendum bibendum natoque primis id vehicula libero nulla.</CardDescription>
+						  </CardHeader>
+					  </Card>
+				  </DrawerTrigger>
+				  <DrawerContent className="article-content">
+					  <DrawerHeader>
+						  {/*<img src="https://via.placeholder.com/150" alt="placeholder" className="rounded-full w-20 h-20"/>-->*/}
+						  <img src="https://cdn.vox-cdn.com/thumbor/SwcC3EUYhS7CvzpU-j6ilklwVsI=/0x0:2040x1360/1200x628/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/24328229/g95schero.jpg"></img>
+						  <DrawerTitle className="article-title">Lorem ipsum odor amet, consectetuer adipiscing elit.</DrawerTitle>
+						  <DrawerDescription className="article-summary">Lorem ipsum odor amet, consectetuer adipiscing elit. Bibendum bibendum natoque primis id vehicula libero nulla.<br></br><br></br>Lorem ipsum odor amet, consectetuer adipiscing elit. Sagittis condimentum facilisis sollicitudin odio auctor. Molestie habitant pretium sed semper taciti ullamcorper eget consequat. Nibh taciti ante litora odio ipsum venenatis. Interdum diam adipiscing porttitor volutpat habitant. Semper porta eget maximus justo magna; nisi tincidunt inceptos.</DrawerDescription>
+					  </DrawerHeader>
+					  <DrawerFooter>
+
+						  <DrawerClose>
+
+						  </DrawerClose>
+					  </DrawerFooter>
+				  </DrawerContent>
+			  </Drawer>
       </main>
       <ul class = "navbar">
           <li><a href = "/account">Account</a></li>

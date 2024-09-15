@@ -16,6 +16,8 @@ export default function Home() {
      
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
       <div class = "accInfo">
+        <img src="https://via.placeholder.com/150" alt="placeholder" className="rounded-full w-20 h-20"/>
+        <br></br>
             <Accordion type="single" collapsible>
                     <AccordionItem value="item-1">
                         <AccordionTrigger>Is it accessible?</AccordionTrigger>

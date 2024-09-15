@@ -1,6 +1,5 @@
 import { Resource } from "sst";
 import { drizzle } from "drizzle-orm/aws-data-api/pg";
-import { migrate } from "drizzle-orm/aws-data-api/pg/migrator";
 import { RDSDataClient } from "@aws-sdk/client-rds-data";
 
 export const db = drizzle(new RDSDataClient({region: "us-east-1"}), {
@@ -8,5 +7,3 @@ export const db = drizzle(new RDSDataClient({region: "us-east-1"}), {
     secretArn: Resource.HeadlinerDB.secretArn,
     resourceArn: Resource.HeadlinerDB.clusterArn
 });
-
-await migrate(db, { migrationsFolder: "./drizzle" });

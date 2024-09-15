@@ -31,7 +31,9 @@ export default function Home() {
   return (
     <div className="min-h-screen w-screen font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <h1 className="header">Search</h1>
+      <div className="titleContainer">
+            <h1 className="header">Search</h1>
+        </div>
         <Command>
           <CommandInput placeholder="Search for articles..." />
           <CommandList>

@@ -42,7 +42,9 @@ export default function Home() {
 				<InstallPrompt/>
 			</div>
 			<button onClick={() => signIn()}>Sign in</button>
-			<h1 className="header">Headliner</h1>
+      <div className="title">
+            <h1 className="header">Headliner</h1>
+        </div>
 			<Carousel>
 				<h3 className="carousel-label">View more from this topic</h3>
 				<CarouselContent className="news-card-small-container">

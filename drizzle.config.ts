@@ -1,13 +1,15 @@
 import { defineConfig } from 'drizzle-kit';
+import { Resource } from "sst";
 
 export default defineConfig({
-    schema: './src/lib/schema.js',
-    out: './drizzle',
-    dialect: 'postgresql', // 'postgresql' | 'mysql' | 'sqlite'
+    driver: "aws-data-api",
+    dialect: "postgresql",
     dbCredentials: {
-        host: process.env.DB_HOST,
-        user: process.env.DB_USER,
-        password: process.env.DB_PASSWORD,
-        database: process.env.DB_NAME,
+        database: Resource.HeadlinerDB.database,
+        secretArn: Resource.HeadlinerDB.secretArn,
+        resourceArn: Resource.HeadlinerDB.clusterArn,
     },
+    // Pick up all our schema files
+    schema: ["./src/lib/*.sql.js"],
+    out: "./migrations",
 });

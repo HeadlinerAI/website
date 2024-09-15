@@ -17,7 +17,7 @@ export default function Home() {
       <div className = "accInfo">
         <div className = "headContainer">
             <div className = "avatar">      
-                <img src="https://via.placeholder.com/150" alt="placeholder" className="rounded-full w-20 h-20"/>
+                <img src="https://via.placeholder.com/150" alt="placeholder" className="rounded-full w-20 h-20 drop-shadow-lg"/>
             </div>
             <div className="accHeadText">
                 <h1>My Account</h1>

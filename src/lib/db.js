@@ -4,7 +4,7 @@ import { RDSDataClient } from "@aws-sdk/client-rds-data";
 import { migrate } from 'drizzle-orm/mysql2/migrator';
 
 console.log(Resource.HeadlinerDB.database);
-export const db = drizzle(new RDSDataClient({}), {
+export const db = drizzle(new RDSDataClient({Region: "us-east-1"}), {
     database: Resource.HeadlinerDB.database,
     secretArn: Resource.HeadlinerDB.secretArn,
     resourceArn: Resource.HeadlinerDB.clusterArn

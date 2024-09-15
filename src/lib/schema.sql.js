@@ -5,6 +5,7 @@ export const users = pgTable('users', {
     name: varchar('name', { length: 256 }),
     email: varchar('email', { length: 256 }),
     created_at: timestamp('created_at').defaultNow(),
+    last_feed_generated: timestamp('last_feed_generated').default(null),
 });
 
 export const bookmarks = pgTable('bookmarks', {

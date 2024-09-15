@@ -1,20 +1,19 @@
 import { db } from "@/lib/db";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "../auth/[...nextauth]";
+import {NextResponse} from "next/server";
 
 
-export default async function handler(req, res) {
-    const session = await getServerSession(req, res, authOptions);
-    if (req.method === 'GET') {
-        // Process a GET request
-        const bookmarks = await db.bookmarks.findFirst({
-            where: {
-                userId: session.userId
-            }
-        });
-        res.status(200).json(bookmarks).send();
-    } else {
-        // return invalid method
-        res.status(405).send({message: 'Method Not Allowed'});
+export async function GET() {
+    const session = await getServerSession(authOptions);
+    // Process a GET request
+    if (!session) {
+        return NextResponse.json({error: 'Unauthorized'}, {status: 401});
     }
+    const bookmarks = await db.bookmarks.findFirst({
+        where: {
+            userId: session.user.userId
+        }
+    });
+    return NextResponse.json(bookmarks, {status: 200});
 }

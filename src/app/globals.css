@@ -129,13 +129,14 @@ body {
   .navbar {
     float: left;
     display: block;
+    position:fixed;
   }
 
   .navbar a {
-    position: relative;
     bottom: 0;
     left: 0;
     transform: none;
+    width: 100%;
   }
 }
 

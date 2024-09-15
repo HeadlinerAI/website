@@ -32,6 +32,7 @@ import {
 	CarouselPrevious,
 } from "@/components/ui/carousel-touch";
 import {signIn} from "next-auth/react";
+import { Button, buttonVariants } from "@/components/ui/button"
 
 export default function Home() {
   return (
@@ -96,7 +97,8 @@ export default function Home() {
 							inceptos.</DrawerDescription>
 					</DrawerHeader>
 					<DrawerFooter>
-
+						<a href="https://example.com" target="_blank" className={buttonVariants({ variant: "outline" })}>Read More</a>
+						<Button>Talk to Benjy</Button>
 						<DrawerClose>
 
 						</DrawerClose>

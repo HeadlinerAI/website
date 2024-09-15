@@ -136,7 +136,7 @@ export default function Home() {
 					  </DrawerFooter>
 				  </DrawerContent>
 			  </Drawer>
-        <ul class = "navbar">
+        <ul className = "navbar">
             <li><a href = "/account">Account</a></li>
             <li><a href = "/">News</a></li>
             <li><a href = "/bookmarks">Bookmarks</a></li>

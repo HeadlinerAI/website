@@ -170,13 +170,13 @@ export default function Home() {
 					</DrawerFooter>
 				</DrawerContent>
 			</Drawer>
-			<ul class="navbar">
-				<li><a href="/account">Account</a></li>
-				<li><a href="/">News</a></li>
-				<li><a href="/bookmarks">Bookmarks</a></li>
-				<li><a href="/search">Search</a></li>
-			</ul>
 		</main>
+    <div className="navbar">
+       <li><a href = "/">News</a></li>
+       <li><a href = "/account">Account</a></li>
+       <li><a href = "/bookmarks">Bookmarks</a></li>
+       <li><a href = "/search">Search</a></li>
+		</div>
 	</div>
 
 

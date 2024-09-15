@@ -15,6 +15,13 @@
       "when": 1726372977978,
       "tag": "0001_melodic_susan_delgado",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1726381607193,
+      "tag": "0002_adorable_weapon_omega",
+      "breakpoints": true
     }
   ]
 }

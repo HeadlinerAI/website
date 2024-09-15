@@ -3,7 +3,7 @@ import { drizzle } from "drizzle-orm/aws-data-api/pg";
 import { RDSDataClient } from "@aws-sdk/client-rds-data";
 import { migrate } from 'drizzle-orm/mysql2/migrator';
 
-console.log(RDSDataClient.HeadlinerDB.database);
+console.log(Resource.HeadlinerDB.database);
 export const db = drizzle(new RDSDataClient({}), {
     database: Resource.HeadlinerDB.database,
     secretArn: Resource.HeadlinerDB.secretArn,

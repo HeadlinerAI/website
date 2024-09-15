@@ -10,7 +10,7 @@ export default $config({
   },
   async run() {
 
-    const vpc = new sst.aws.Vpc("HeadlinerVPC");
+    const vpc = new sst.aws.Vpc("HeadlinerVPC", {nat: true});
     const database = new sst.aws.Postgres("HeadlinerDB", { vpc });
     new sst.aws.Nextjs("HeadlinerAI", {
       link: [database],

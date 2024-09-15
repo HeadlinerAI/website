@@ -10,4 +10,4 @@ export const db = drizzle(new RDSDataClient({region: "us-east-1"}), {
     resourceArn: Resource.HeadlinerDB.clusterArn
 });
 
-await migrate(db, { migrationsFolder: './drizzle' });
+await migrate(db, { migrationsFolder: '../../../drizzle' });

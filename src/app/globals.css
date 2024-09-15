@@ -98,6 +98,7 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  position: fixed;
 }
 
 .navbar li {
@@ -126,16 +127,13 @@ body {
 /*NOTE: maybe later could have curtain menus only for mobile*/
 @media screen and (max-width: 600px) {
   .navbar {
-    float: none;
+    float: left;
     display: block;
+    position: fixed;
   }
 
-  .navbar {
-    float: left;
-  }
-  
   .navbar a {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     transform: none;
@@ -212,5 +210,5 @@ body {
   display: block;
   float: left;
   padding: 5px 6px;
-
+  filter: drop-shadow(8px 8px 10px gray);
 }

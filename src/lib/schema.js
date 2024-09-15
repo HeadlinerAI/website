@@ -2,6 +2,7 @@ import { integer, pgEnum, pgTable, serial, uniqueIndex, varchar, timestamp } fro
 
 export const users = pgTable('users', {
     id: serial('id').primaryKey(),
+    name: varchar('name', { length: 256 }),
     email: varchar('email', { length: 256 }),
     created_at: timestamp('created_at').defaultNow(),
 });

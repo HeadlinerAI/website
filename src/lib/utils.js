@@ -21,7 +21,7 @@ export function urlBase64ToUint8Array(base64String) {
 }
 
 const axios = require('axios');
-
+import fs from 'fs';
 // and we need jsdom and Readability to parse the article HTML
 const { JSDOM } = require('jsdom');
 const { Readability } = require('@mozilla/readability');

@@ -14,6 +14,7 @@ export default $config({
     const database = new sst.aws.Postgres("HeadlinerDB", { vpc });
     new sst.aws.Nextjs("HeadlinerAI", {
       link: [database],
+      domain: "headlinerai.net",
       vpc
     });
 

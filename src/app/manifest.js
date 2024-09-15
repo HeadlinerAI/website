@@ -1,8 +1,8 @@
 export default function manifest() {
     return {
-        name: 'Headliner.AI PWA',
-        short_name: 'Headliner.AI',
-        description: 'A Progressive Web App built with Next.js',
+        name: 'HeadlinerAI PWA',
+        short_name: 'HeadlinerAI',
+        description: 'A revolutionary news app powered by AI',
         start_url: '/',
         display: 'standalone',
         background_color: '#ffffff',

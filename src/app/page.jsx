@@ -97,8 +97,8 @@ export default function Home() {
 							inceptos.</DrawerDescription>
 					</DrawerHeader>
 					<DrawerFooter>
-						<a href="https://example.com" target="_blank" className={buttonVariants({ variant: "outline" })}>Read More</a>
-						<Button variant="outline" className="benjy">Talk to Benjy</Button>
+            <a href="https://example.com" target="_blank" className={buttonVariants({ variant: "secondary" })}>Read More</a>
+            <a href="/chat" target="_blank" className={buttonVariants({ variant: "outline" })}>Ask Benjy</a>
 						<DrawerClose>
 
 						</DrawerClose>
@@ -133,7 +133,8 @@ export default function Home() {
 							inceptos.</DrawerDescription>
 					</DrawerHeader>
 					<DrawerFooter>
-
+						  <a href="https://example.com" target="_blank" className={buttonVariants({ variant: "secondary" })}>Read More</a>
+						  <Button>Talk to Benjy</Button>
 						<DrawerClose>
 
 						</DrawerClose>
@@ -167,7 +168,8 @@ export default function Home() {
 							inceptos.</DrawerDescription>
 					</DrawerHeader>
 					<DrawerFooter>
-
+						  <a href="https://example.com" target="_blank" className={buttonVariants({ variant: "secondary" })}>Read More</a>
+						  <Button>Talk to Benjy</Button>
 						<DrawerClose>
 
 						</DrawerClose>

@@ -274,3 +274,10 @@ main{
   color: white;
 }
 
+.chat{
+  display:flex;
+  flex-flow: row wrap;
+  align-content: center;
+  align-items: flex-end;
+}
+

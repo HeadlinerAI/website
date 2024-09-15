@@ -29,8 +29,8 @@ import { Car } from "lucide-react"
 export default function Chat() {
   return (
 
-    <div className="min-h-screen w-screen font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div className="min-h-screen w-screen font-[family-name:var(--font-geist-sans)] chat">
+      <main className="flex flex-grow h-14 items-center sm:items-start">
 
         < CardsChat / >
         

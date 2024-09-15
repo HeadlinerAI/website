@@ -205,6 +205,12 @@ body {
 /*account page*/
 
 .accInfo div{
+  /*centering elements*/
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-content: center;
+
   background-color: rgb(244, 244, 244);
   width: 100%;
   padding: 5px 6px;
@@ -214,11 +220,4 @@ body {
 .headCoantainer{
   display: flex;
   justify-content: flex-start;
-}
-
-div{
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  align-content: center;
 }

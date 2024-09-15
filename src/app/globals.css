@@ -91,6 +91,7 @@ body {
   }
 }
 
+/*Navbar*/
 .navbar {
   list-style-type: none;
   margin: 0;
@@ -99,7 +100,6 @@ body {
   background-color: #333;
 }
 
-/*Navbar*/
 .navbar li {
   float: left;
 }
@@ -207,6 +207,10 @@ body {
 /*account page*/
 
 .accInfo div{
-  background-color: lightgray;
+  background-color: rgb(244, 244, 244);
   width: 100%;
+  display: block;
+  float: left;
+  padding: 5px 6px;
+
 }

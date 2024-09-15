@@ -14,10 +14,14 @@ export default function Home() {
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
      
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-      <div class = "accInfo">
-        <div class = "accHead">
-            <div class = "avatar">      
-            <img src="https://via.placeholder.com/150" alt="placeholder" className="rounded-full w-20 h-20"/>
+      <div className = "accInfo">
+        <div className = "headContainer">
+            <div className = "avatar">      
+                <img src="https://via.placeholder.com/150" alt="placeholder" className="rounded-full w-20 h-20"/>
+            </div>
+            <div className="accHeadText">
+                <h1>My Account</h1>
+                <h2>Other information about the user. mayber a short one or two sentences, or could be a list of random info like email, etc. Maybe it lists preferences?</h2>
             </div>
         </div>
         <br></br>
@@ -62,7 +66,7 @@ export default function Home() {
           
         </div>
       </main>
-      <ul class = "navbar">
+      <ul className = "navbar">
           <li><a href = "/account">Account</a></li>
           <li><a href = "/">News</a></li>
           <li><a href = "/bookmarks">Bookmarks</a></li>

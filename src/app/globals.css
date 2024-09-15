@@ -129,12 +129,11 @@ body {
   .navbar {
     float: left;
     display: block;
-    position: fixed;
   }
 
   .navbar a {
-    position: fixed;
-    top: 0;
+    position: relative;
+    bottom: 0;
     left: 0;
     transform: none;
   }
@@ -207,8 +206,14 @@ body {
 .accInfo div{
   background-color: rgb(244, 244, 244);
   width: 100%;
-  display: block;
-  float: left;
+  /*display: block;
+  float: left;*/
   padding: 5px 6px;
   filter: drop-shadow(8px 8px 10px gray);
+}
+
+.headCoantainer{
+  display: flex;
+  flex-direction: row;
+  text-align: left;
 }

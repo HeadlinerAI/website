@@ -3,7 +3,7 @@ import {authOptions} from "../auth/[...nextauth]/authData";
 import {NextResponse} from "next/server";
 import {db} from "@/lib/db";
 import NewsAPI from "newsapi";
-import {loadNewsContent} from "../../../lib/utils";
+import {loadNewsContent} from "@/lib/dom";
 import OpenAI from "openai";
 
 export async function GET() {

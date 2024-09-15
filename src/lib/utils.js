@@ -24,8 +24,7 @@ export function urlBase64ToUint8Array(base64String) {
 
 export async function loadNewsContent(result) {
     const axios = require('axios');
-    import fs from 'fs';
-// and we need jsdom and Readability to parse the article HTML
+    // and we need jsdom and Readability to parse the article HTML
     const { JSDOM } = require('jsdom');
     const { Readability } = require('@mozilla/readability');
     let r = await axios.get(result.url);

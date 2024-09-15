@@ -9,6 +9,13 @@ export default $config({
     };
   },
   async run() {
-    new sst.aws.Nextjs("HeadstarterAI");
+
+    const vpc = new sst.aws.Vpc("HeadlinerVPC", {nat: true});
+    const database = new sst.aws.Postgres("HeadlinerDB", { vpc });
+    new sst.aws.Nextjs("HeadlinerAI", {
+      link: [database],
+      vpc
+    });
+
   },
 });

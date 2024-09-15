@@ -146,6 +146,7 @@ body {
   font-size: 48px;
   margin-left: 50%;
   transform: translateX(-50%);
+  text-align: center;
 }
 
 .news-card {
@@ -154,6 +155,23 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.vox-cdn.com/thumbor/SwcC3EUYhS7CvzpU-j6ilklwVsI=/0x0:2040x1360/1200x628/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/24328229/g95schero.jpg");
   background-size: cover;
   background-position: center;
+}
+.news-card-small {
+  height: 150px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.vox-cdn.com/thumbor/SwcC3EUYhS7CvzpU-j6ilklwVsI=/0x0:2040x1360/1200x628/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/24328229/g95schero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.news-card-small-container {
+  width: 90%;
+  margin-left: 3%;
+}
+
+.carousel-label {
+  text-align:center;
+  transform: translate(-50px, 0);
+  margin-right: 65px;
 }
 
 .article-title {
@@ -176,4 +194,12 @@ body {
   border-radius: var(--radius);
   padding: 1rem;
   margin: 1rem;
+}
+
+.article-content {
+  background-image: url("https://www.cranfield-colours.co.uk/wp-content/uploads/2022/01/cranfield-traditional-etching-ink-mid-black.jpg");
+}
+
+.hidden {
+  display: none;
 }

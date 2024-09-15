@@ -177,3 +177,10 @@ body {
   padding: 1rem;
   margin: 1rem;
 }
+
+/*account page*/
+
+.accInfo div{
+  background-color: lightgray;
+  width: 100%;
+}
